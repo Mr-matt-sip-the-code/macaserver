@@ -1,0 +1,551 @@
+.navbar4-wrapper {
+  display: contents;
+}
+ 
+.navbar4-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: var(--dl-color-theme-neutral-light);
+  /* Minimalist addition: subtle bottom border and shadow for navigation separation */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+ 
+.navbar4-navbar-interactive {
+  width: 100%;
+  height: 123px;
+  display: flex;
+  max-width: var(--dl-layout-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-layout-space-twounits);
+  padding-left: var(--dl-layout-space-threeunits);
+  padding-right: var(--dl-layout-space-threeunits);
+  padding-bottom: var(--dl-layout-space-twounits);
+  justify-content: space-between;
+}
+ 
+.navbar4-image1 {
+  width: 213px;
+  height: 195px;
+  align-self: center;
+  object-fit: cover;
+  /* Minimalist addition: slightly softer image corners */
+  border-radius: 8px;
+}
+ 
+.navbar4-desktop-menu {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+ 
+.navbar4-links1 {
+  gap: var(--dl-layout-space-twounits);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: var(--dl-layout-space-twounits);
+  flex-direction: row;
+  justify-content: flex-start;
+}
+ 
+.navbar4-link11,
+.navbar4-link21,
+.navbar4-link31,
+.navbar4-link32 {
+  text-decoration: none;
+  color: var(--dl-color-theme-neutral-dark); /* Ensure text color is consistent */
+  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+.navbar4-link11:hover,
+.navbar4-link21:hover,
+.navbar4-link31:hover,
+.navbar4-link32:hover {
+  color: var(--dl-color-theme-primary1); /* Highlight on hover */
+}
+ 
+.navbar4-burger-menu {
+  display: none;
+}
+ 
+.navbar4-icon1 {
+  width: var(--dl-layout-size-xsmall);
+  height: var(--dl-layout-size-xsmall);
+}
+ 
+.navbar4-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: var(--dl-layout-space-twounits);
+  z-index: 100;
+  position: absolute;
+  flex-direction: column;
+  background-color: var(--dl-color-theme-neutral-light);
+  /* Minimalist addition: subtle shadow for mobile menu */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+ 
+.navbar4-image2 {
+  width: 127px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+ 
+.navbar4-links2 {
+  gap: var(--dl-layout-space-unit);
+  flex: 0 0 auto;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.landing-fragment10, .landing-text10,
+.landing-fragment12, .landing-text12,
+.landing-fragment15, .landing-text15,
+.landing-fragment13, .landing-text13,
+.landing-fragment14, .landing-text14,
+.landing-fragment11, .landing-text11 {
+  display: contents; /* Keep as contents for fragment structure */
+}
+ 
+@media(max-width: 767px) {
+  .navbar4-navbar-interactive {
+    padding-left: var(--dl-layout-space-twounits);
+    padding-right: var(--dl-layout-space-twounits);
+  }
+  .navbar4-desktop-menu {
+    display: none;
+  }
+  .navbar4-burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .navbar4-navbar-interactive {
+    padding: var(--dl-layout-space-unit);
+  }
+  .navbar4-mobile-menu {
+    padding: var(--dl-layout-space-unit);
+  }
+}
+
+.propiedadesstuff-plsholder-wrapper {
+  display: contents;
+}
+ 
+.propiedadesstuff-plsholder-layout349 {
+  gap: var(--dl-layout-space-twounits);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  /* Minimalist gradient with softer colors */
+  background-image: linear-gradient(45deg, rgba(194, 229, 156, 0.5) 0%, rgba(7, 138, 181, 0.4) 100%);
+  padding: var(--dl-layout-space-fourunits); /* Add some padding to the section */
+}
+ 
+.propiedadesstuff-plsholder-text10 {
+  width: 322px;
+  height: 60px;
+  text-align: center;
+  color: #333333; /* Lighter text color */
+  font-size: 42px; /* Slightly adjusted font size */
+  font-weight: 700;
+  margin-bottom: var(--dl-layout-space-unit); /* Add some spacing */
+}
+ 
+.propiedadesstuff-plsholder-propatis-cards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%; /* Ensure it takes full width for responsive design */
+}
+ 
+.propiedadesstuff-plsholder-container1 {
+  gap: var(--dl-layout-space-halfunit);
+  /* Removed dashed border for minimalist look */
+  display: flex;
+  max-width: 600px;
+  align-items: center;
+  margin-bottom: var(--dl-layout-space-fourunits);
+  flex-direction: column;
+}
+ 
+.propiedadesstuff-plsholder-container2 {
+  width: 100%;
+  display: grid; /* Use grid for better layout control */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: var(--dl-layout-space-twounits); /* Gap between grid items */
+}
+ 
+.propiedadesstuff-plsholder-card1,
+.propiedadesstuff-plsholder-card2,
+.propiedadesstuff-plsholder-card31,
+.propiedadesstuff-plsholder-card32,
+.propiedadesstuff-plsholder-card4,
+.propiedadesstuff-plsholder-card51,
+.propiedadesstuff-plsholder-card52,
+.propiedadesstuff-plsholderaddbutten {
+  color: var(--dl-color-theme-neutral-light);
+  height: auto; /* Allow height to adjust based on content */
+  min-height: 370px; /* Maintain a minimum height */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--dl-layout-space-twounits); /* Add padding */
+  border-radius: 16px; /* More rounded corners for cards */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Stronger shadow for card lift */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.propiedadesstuff-plsholder-card1:hover,
+.propiedadesstuff-plsholder-card2:hover,
+.propiedadesstuff-plsholder-card31:hover,
+.propiedadesstuff-plsholder-card32:hover,
+.propiedadesstuff-plsholder-card4:hover,
+.propiedadesstuff-plsholder-card51:hover,
+.propiedadesstuff-plsholder-card52:hover,
+.propiedadesstuff-plsholderaddbutten:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12); /* More pronounced shadow on hover */
+}
+
+.propiedadesstuff-plsholder-card1 { background-color: #4CAF50; } /* Slightly brighter green */
+.propiedadesstuff-plsholder-card2 { background-color: #388E3C; } /* Slightly brighter green */
+.propiedadesstuff-plsholder-card31, .propiedadesstuff-plsholder-card32 { background-color: #1B5E20; } /* Darker green */
+.propiedadesstuff-plsholder-card4 { background-color: #66BB6A; } /* Lighter green */
+.propiedadesstuff-plsholder-card51, .propiedadesstuff-plsholder-card52 { background-color: #2E7D32; } /* Medium green */
+.propiedadesstuff-plsholderaddbutten { background-color: #66BB6A; } /* Lighter green */
+ 
+.propiedadesstuff-plsholder-image1,
+.propiedadesstuff-plsholder-image2,
+.propiedadesstuff-plsholder-image3,
+.propiedadesstuff-plsholder-image4,
+.propiedadesstuff-plsholder-image5,
+.propiedadesstuff-plsholder-image6,
+.propiedadesstuff-plsholder-image7 {
+  width: var(--dl-layout-size-medium);
+  height: var(--dl-layout-size-medium);
+  object-fit: cover;
+  border-radius: var(--dl-layout-radius-round); /* Circular images */
+  margin-bottom: var(--dl-layout-space-unit); /* Spacing below images */
+}
+ 
+.propiedadesstuff-plsholder-button10,
+.propiedadesstuff-plsholder-button11,
+.propiedadesstuff-plsholder-button12,
+.propiedadesstuff-plsholder-button13,
+.propiedadesstuff-plsholder-button14,
+.propiedadesstuff-plsholder-button15,
+.propiedadesstuff-plsholder-button16,
+.propiedadesstuff-plsholder-button17,
+.propiedadesstuff-plsholder-button18,
+.propiedadesstuff-plsholder-button19,
+.propiedadesstuff-plsholder-button20,
+.propiedadesstuff-plsholder-button21,
+.propiedadesstuff-plsholder-button22,
+.propiedadesstuff-plsholder-button23 {
+  width: 80%; /* Adjust button width */
+  text-align: center;
+  border-radius: 24px; /* More rounded buttons */
+  margin-top: var(--dl-layout-space-halfunit); /* Spacing between buttons */
+  padding: 10px 15px; /* Adjust padding */
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Specific button styling for minimalist feel */
+.propiedadesstuff-plsholder-button10,
+.propiedadesstuff-plsholder-button12,
+.propiedadesstuff-plsholder-button14,
+.propiedadesstuff-plsholder-button16,
+.propiedadesstuff-plsholder-button18,
+.propiedadesstuff-plsholder-button20,
+.propiedadesstuff-plsholder-button22 {
+  background-color: rgba(255, 255, 255, 0.2); /* Lighter background for secondary actions */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #FFFFFF;
+}
+
+.propiedadesstuff-plsholder-button11,
+.propiedadesstuff-plsholder-button13,
+.propiedadesstuff-plsholder-button15,
+.propiedadesstuff-plsholder-button17,
+.propiedadesstuff-plsholder-button19,
+.propiedadesstuff-plsholder-button21,
+.propiedadesstuff-plsholder-button23 {
+  background-color: var(--dl-color-theme-primary1);
+  color: var(--dl-color-theme-secondary1);
+  border: none;
+}
+
+/* Hover effects for buttons */
+.propiedadesstuff-plsholder-button10:hover,
+.propiedadesstuff-plsholder-button12:hover,
+.propiedadesstuff-plsholder-button14:hover,
+.propiedadesstuff-plsholder-button16:hover,
+.propiedadesstuff-plsholder-button18:hover,
+.propiedadesstuff-plsholder-button20:hover,
+.propiedadesstuff-plsholder-button22:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.propiedadesstuff-plsholder-button11:hover,
+.propiedadesstuff-plsholder-button13:hover,
+.propiedadesstuff-plsholder-button15:hover,
+.propiedadesstuff-plsholder-button17:hover,
+.propiedadesstuff-plsholder-button19:hover,
+.propiedadesstuff-plsholder-button21:hover,
+.propiedadesstuff-plsholder-button23:hover {
+  background-color: var(--dl-color-theme-primary2);
+  transform: translateY(-1px);
+}
+ 
+.propiedadesstuff-plsholderaddbutten {
+  text-decoration: none;
+  background-color: #A5D6A7; /* Lighter green for the add button */
+}
+ 
+.propiedadesstuff-plsholder-image8 {
+  width: 230px;
+  height: 225px;
+  object-fit: cover;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-style: hidden;
+  border-width: 1px;
+  padding-left: revert;
+  border-radius: var(--dl-layout-radius-round);
+  animation-name: none; /* Keep animations simple or remove for minimalist */
+  animation-delay: 0s;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  border-bottom-left-radius: var(--dl-layout-radius-round); /* Make it fully round */
+}
+ 
+.landing-fragment30, .landing-text30,
+.landing-fragment27, .landing-text27,
+.landing-fragment34, .landing-text34,
+.landing-fragment24, .landing-text24,
+.landing-fragment26, .landing-text26,
+.landing-fragment18, .landing-text18,
+.landing-fragment29, .landing-text29,
+.landing-fragment37, .landing-text37,
+.landing-fragment32, .landing-text32,
+.landing-fragment25, .landing-text25,
+.landing-fragment20, .landing-text20,
+.landing-fragment36, .landing-text36,
+.landing-fragment23, .landing-text23 {
+  display: contents;
+}
+ 
+.landing-fragment17 {
+  display: contents;
+}
+ 
+.landing-text17 {
+  color: #333333; /* Darker text color for headings */
+  display: inline-block;
+  font-size: 48px;
+  box-shadow: none; /* Remove box shadow for a flatter, minimalist look */
+  text-transform: capitalize;
+  text-decoration: none; /* Remove underline */
+  padding: 0; /* Remove padding if any */
+}
+ 
+.landing-fragment28, .landing-text28,
+.landing-fragment31, .landing-text31,
+.landing-fragment16, .landing-text16,
+.landing-fragment33, .landing-text33,
+.landing-fragment35, .landing-text35,
+.landing-fragment22, .landing-text22,
+.landing-fragment19, .landing-text19,
+.landing-fragment21, .landing-text21 {
+  display: contents;
+}
+ 
+@media(max-width: 991px) {
+  .propiedadesstuff-plsholder-propatis-cards {
+    flex-direction: column;
+  }
+  .propiedadesstuff-plsholder-container1 {
+    margin-bottom: var(--dl-layout-space-threeunits);
+  }
+}
+ 
+@media(max-width: 767px) {
+  .propiedadesstuff-plsholder-container1 {
+    margin-bottom: var(--dl-layout-space-oneandhalfunits);
+  }
+  .propiedadesstuff-plsholder-card1,
+  .propiedadesstuff-plsholder-card2,
+  .propiedadesstuff-plsholder-card31,
+  .propiedadesstuff-plsholder-card32,
+  .propiedadesstuff-plsholder-card4,
+  .propiedadesstuff-plsholder-card51,
+  .propiedadesstuff-plsholder-card52,
+  .propiedadesstuff-plsholderaddbutten {
+    width: 100%;
+  }
+}
+
+.footertesto-wrapper {
+  display: contents;
+}
+ 
+.footertesto-footer7 {
+  width: 100%; /* Make footer full width */
+  height: auto; /* Adjust height based on content */
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  padding-top: var(--dl-layout-space-fourunits);
+  padding-bottom: var(--dl-layout-space-fourunits); /* Add bottom padding */
+  border-color: var(--dl-color-theme-secondary1);
+  border-width: 0; /* Remove border */
+  border-radius: 0; /* Remove border radius */
+  flex-direction: column;
+  justify-content: center;
+  /* Minimalist gradient with softer colors */
+  background-image: linear-gradient(45deg, rgba(194, 229, 156, 0.5) 0%, rgba(7, 138, 181, 0.4) 100%);
+  margin-top: var(--dl-layout-space-fourunits); /* Add spacing above footer */
+}
+ 
+.footertesto-container {
+  width: 80%; /* Adjust width for better responsiveness */
+  max-width: 600px; /* Max width for readability */
+  height: auto; /* Adjust height based on content */
+  display: grid;
+  align-self: center;
+  border: none; /* Remove borders */
+  grid-template-columns: 1fr 1fr;
+  gap: var(--dl-layout-space-unit); /* Add gap between grid items */
+  padding: var(--dl-layout-space-unit); /* Add padding */
+  color: #FFFFFF; /* White text for contrast on background */
+}
+ 
+.footertesto-text1,
+.footertesto-text2,
+.footertesto-text3,
+.footertesto-text4 {
+  text-align: center;
+  border-width: 0; /* Remove borders */
+  padding: var(--dl-layout-space-halfunit); /* Add some padding */
+}
+ 
+.footertesto-separator {
+  width: 50%; /* Shorter separator */
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5); /* Lighter separator color */
+  margin-top: var(--dl-layout-space-twounits); /* Spacing around separator */
+  margin-bottom: var(--dl-layout-space-twounits);
+}
+ 
+.footertesto-button {
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2); /* Lighter background for button */
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.footertesto-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+ 
+.landing-fragment38, .landing-text38,
+.landing-fragment41, .landing-text41,
+.landing-fragment39, .landing-text39,
+.landing-fragment40, .landing-text40 {
+  display: contents;
+}
+ 
+.footertestoroot-class-name {
+  width: auto;
+  align-self: stretch;
+}
+ 
+.landing-container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fcfcfc; /* Very light background for the main container */
+}
+ 
+.landing-fragment10, .landing-text10,
+.landing-fragment11, .landing-text11,
+.landing-fragment12, .landing-text12,
+.landing-fragment13, .landing-text13,
+.landing-fragment14, .landing-text14,
+.landing-fragment15, .landing-text15,
+.landing-fragment16, .landing-text16,
+.landing-fragment17, .landing-text17,
+.landing-fragment18, .landing-text18,
+.landing-fragment19, .landing-text19,
+.landing-fragment20, .landing-text20,
+.landing-fragment21, .landing-text21,
+.landing-fragment22, .landing-text22,
+.landing-fragment23, .landing-text23,
+.landing-fragment24, .landing-text24,
+.landing-fragment25, .landing-text25,
+.landing-fragment26, .landing-text26,
+.landing-fragment27, .landing-text27,
+.landing-fragment28, .landing-text28,
+.landing-fragment29, .landing-text29,
+.landing-fragment30, .landing-text30,
+.landing-fragment31, .landing-text31,
+.landing-fragment32, .landing-text32,
+.landing-fragment33, .landing-text33,
+.landing-fragment34, .landing-text34,
+.landing-fragment35, .landing-text35,
+.landing-fragment36, .landing-text36,
+.landing-fragment37, .landing-text37,
+.landing-fragment38, .landing-text38,
+.landing-fragment39, .landing-text39,
+.landing-fragment40, .landing-text40,
+.landing-fragment41, .landing-text41 {
+  display: contents;
+}
+
+/* Ensure font smoothing for all text */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; /* A soft dark grey for headings */
+}
+
+p, span, a, button {
+  color: #555555; /* A medium grey for body text */
+}
+
+/* Override specific text colors where fragments are present if needed */
+.landing-text17 {
+  color: #333333; /* Specific color for this heading if it needs to be different */
+}

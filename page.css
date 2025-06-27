@@ -1,0 +1,338 @@
+.navbar4-wrapper {
+  display: contents;
+}
+ 
+.navbar4-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: var(--dl-color-theme-neutral-light);
+  /* Minimalist addition: subtle bottom border and shadow for navigation separation */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+ 
+.navbar4-navbar-interactive {
+  width: 100%;
+  height: 123px;
+  display: flex;
+  max-width: var(--dl-layout-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-layout-space-twounits);
+  padding-left: var(--dl-layout-space-threeunits);
+  padding-right: var(--dl-layout-space-threeunits);
+  padding-bottom: var(--dl-layout-space-twounits);
+  justify-content: space-between;
+}
+ 
+.navbar4-image1 {
+  width: 213px;
+  height: 195px;
+  align-self: center;
+  object-fit: cover;
+  /* Minimalist addition: slightly softer image corners */
+  border-radius: 8px;
+}
+ 
+.navbar4-desktop-menu {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+ 
+.navbar4-links1 {
+  gap: var(--dl-layout-space-twounits);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: var(--dl-layout-space-twounits);
+  flex-direction: row;
+  justify-content: flex-start;
+}
+ 
+.navbar4-link11,
+.navbar4-link21,
+.navbar4-link31,
+.navbar4-link32 {
+  text-decoration: none;
+  color: var(--dl-color-theme-neutral-dark); /* Ensure text color is consistent */
+  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+.navbar4-link11:hover,
+.navbar4-link21:hover,
+.navbar4-link31:hover,
+.navbar4-link32:hover {
+  color: var(--dl-color-theme-primary1); /* Highlight on hover */
+}
+ 
+.navbar4-burger-menu {
+  display: none;
+}
+ 
+.navbar4-icon1 {
+  width: var(--dl-layout-size-xsmall);
+  height: var(--dl-layout-size-xsmall);
+}
+ 
+.navbar4-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: var(--dl-layout-space-twounits);
+  z-index: 100;
+  position: absolute;
+  flex-direction: column;
+  background-color: var(--dl-color-theme-neutral-light);
+  /* Minimalist addition: subtle shadow for mobile menu */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+ 
+.navbar4-image2 {
+  width: 127px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+ 
+.navbar4-links2 {
+  gap: var(--dl-layout-space-unit);
+  flex: 0 0 auto;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.page-fragment10, .page-text10,
+.page-fragment12, .page-text12,
+.page-fragment15, .page-text15,
+.page-fragment13, .page-text13,
+.page-fragment14, .page-text14,
+.page-fragment11, .page-text11 {
+  display: contents;
+}
+ 
+@media(max-width: 767px) {
+  .navbar4-navbar-interactive {
+    padding-left: var(--dl-layout-space-twounits);
+    padding-right: var(--dl-layout-space-twounits);
+  }
+  .navbar4-desktop-menu {
+    display: none;
+  }
+  .navbar4-burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .navbar4-navbar-interactive {
+    padding: var(--dl-layout-space-unit);
+  }
+  .navbar4-mobile-menu {
+    padding: var(--dl-layout-space-unit);
+  }
+}
+
+.usfel-wrapper {
+  display: contents;
+}
+ 
+.usfel-container1 {
+  width: 100%; /* Make it responsive */
+  height: auto; /* Adjust height dynamically */
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fcfcfc; /* Very light background */
+  padding: var(--dl-layout-space-fourunits); /* Add general padding */
+}
+ 
+.usfel-text10 {
+  grid-row-end: 2;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-column-start: 1;
+  color: #333333; /* Darker text for heading */
+  font-size: 56px; /* Slightly larger for prominence */
+  margin-bottom: var(--dl-layout-space-twounits);
+}
+ 
+.usfel-separator10,
+.usfel-separator11,
+.usfel-separator12,
+.usfel-separator13,
+.usfel-separator14,
+.usfel-separator15,
+.usfel-separator16,
+.usfel-separator17,
+.usfel-separator18,
+.usfel-separator19 {
+  width: 60%; /* Make separators shorter */
+  max-width: 800px; /* Max width for consistency */
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1); /* Lighter, more subtle separators */
+  margin-top: var(--dl-layout-space-unit);
+  margin-bottom: var(--dl-layout-space-unit);
+}
+ 
+.usfel-text11,
+.usfel-text12,
+.usfel-text13 {
+  text-transform: capitalize;
+  color: #444444; /* Slightly lighter text for subheadings */
+  font-size: 36px; /* Adjusted font size */
+  margin-top: var(--dl-layout-space-threeunits); /* Spacing above sections */
+  margin-bottom: var(--dl-layout-space-twounits);
+}
+ 
+.usfel-container2,
+.usfel-container3 {
+  flex: 0 0 auto;
+  width: 90%; /* Responsive width */
+  max-width: 1200px; /* Max width for content */
+  height: auto;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  padding: 20px;
+  align-items: center; /* Center items vertically */
+  border: 1px solid rgba(0, 0, 0, 0.05); /* Subtle border */
+  border-radius: 12px; /* Rounded corners */
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03); /* Light shadow for a lifted effect */
+  transition: all 0.3s ease-in-out;
+  margin-top: var(--dl-layout-space-twounits);
+}
+
+.usfel-container2:hover,
+.usfel-container3:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.usfel-container3 {
+  background-color: #f5f5f5; /* Slightly different background for visual separation */
+}
+ 
+.usfel-image1,
+.usfel-image2 {
+  width: 45%; /* Make images take up less space to allow iframe to expand */
+  max-width: 450px; /* Max width for images */
+  height: auto; /* Maintain aspect ratio */
+  padding: 8px;
+  align-self: center;
+  object-fit: contain; /* Ensure entire image is visible */
+  border-radius: 16px;
+  margin: var(--dl-layout-space-unit); /* Spacing around images */
+}
+ 
+.usfel-iframe1,
+.usfel-iframe2 {
+  width: 50%; /* Make iframes take up more space */
+  max-width: 800px; /* Max width for iframes */
+  height: 600px; /* Fixed height for consistent embedding */
+  align-self: center;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08); /* Subtle iframe border */
+  margin: var(--dl-layout-space-unit); /* Spacing around iframes */
+}
+
+@media (max-width: 767px) {
+  .usfel-image1, .usfel-image2, .usfel-iframe1, .usfel-iframe2 {
+    width: 100%; /* Stack images and iframes on small screens */
+    margin: var(--dl-layout-space-halfunit) 0;
+  }
+  .usfel-iframe1, .usfel-iframe2 {
+    height: 400px; /* Smaller height for iframes on mobile */
+  }
+}
+ 
+.usfel-container4 {
+  width: 90%; /* Responsive width */
+  max-width: 800px; /* Max width for consistency */
+  height: auto;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid for links */
+  gap: var(--dl-layout-space-unit); /* Gap between grid items */
+  margin-top: var(--dl-layout-space-twounits);
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+ 
+.usfel-link1, .usfel-link2, .usfel-link3, .usfel-link4, .usfel-link5, .usfel-link6, .usfel-link7, .usfel-link8 {
+  padding: 12px 15px; /* Consistent padding for links/buttons */
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--dl-color-theme-primary1); /* Primary button style */
+  color: var(--dl-color-theme-secondary1);
+  border-radius: 24px; /* Rounded buttons */
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.usfel-link1:hover, .usfel-link2:hover, .usfel-link3:hover, .usfel-link4:hover, .usfel-link5:hover, .usfel-link6:hover, .usfel-link7:hover, .usfel-link8:hover {
+  background-color: var(--dl-color-theme-primary2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Specific styling for the Masterty Calculator links to make them stand out slightly */
+.usfel-link7, .usfel-link8 {
+  background-color: #6A9C89; /* A distinct, soft green */
+}
+
+.usfel-link7:hover, .usfel-link8:hover {
+  background-color: #558A7A;
+}
+ 
+.usfel-text20,
+.usfel-text21 {
+  text-align: center;
+  color: #FFFFFF; /* Ensure text color is white for these links */
+}
+ 
+.page-fragment18, .page-text20,
+.page-fragment25, .page-text29,
+.page-fragment21, .page-text23,
+.page-fragment19, .page-text21,
+.page-fragment27, .page-text31,
+.page-fragment20, .page-text22,
+.page-fragment23, .page-text25,
+.page-fragment22, .page-text24,
+.page-fragment17, .page-text19,
+.page-fragment26, .page-text30,
+.page-fragment16, .page-text16,
+.page-text18,
+.page-fragment24, .page-text26 {
+  display: contents;
+}
+
+/* Ensure font smoothing for all text */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; /* A soft dark grey for headings */
+}
+
+p, span, a, button {
+  color: #555555; /* A medium grey for body text */
+}
+
+/* Override specific text colors where fragments are present if needed */
+.page-text16, .page-text18, .page-text20, .page-text31, .page-text26 {
+  color: #333333;
+}

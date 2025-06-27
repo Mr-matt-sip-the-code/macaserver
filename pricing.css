@@ -1,0 +1,550 @@
+.navbar4-wrapper {
+  display: contents;
+}
+ 
+.navbar4-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: var(--dl-color-theme-neutral-light);
+  /* Minimalist addition: subtle bottom border and shadow for navigation separation */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+ 
+.navbar4-navbar-interactive {
+  width: 100%;
+  height: 123px;
+  display: flex;
+  max-width: var(--dl-layout-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-layout-space-twounits);
+  padding-left: var(--dl-layout-space-threeunits);
+  padding-right: var(--dl-layout-space-threeunits);
+  padding-bottom: var(--dl-layout-space-twounits);
+  justify-content: space-between;
+}
+ 
+.navbar4-image1 {
+  width: 213px;
+  height: 195px;
+  align-self: center;
+  object-fit: cover;
+  /* Minimalist addition: slightly softer image corners */
+  border-radius: 8px;
+}
+ 
+.navbar4-desktop-menu {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+ 
+.navbar4-links1 {
+  gap: var(--dl-layout-space-twounits);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: var(--dl-layout-space-twounits);
+  flex-direction: row;
+  justify-content: flex-start;
+}
+ 
+.navbar4-link11,
+.navbar4-link21,
+.navbar4-link31,
+.navbar4-link32 {
+  text-decoration: none;
+  color: var(--dl-color-theme-neutral-dark); /* Ensure text color is consistent */
+  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+.navbar4-link11:hover,
+.navbar4-link21:hover,
+.navbar4-link31:hover,
+.navbar4-link32:hover {
+  color: var(--dl-color-theme-primary1); /* Highlight on hover */
+}
+ 
+.navbar4-burger-menu {
+  display: none;
+}
+ 
+.navbar4-icon1 {
+  width: var(--dl-layout-size-xsmall);
+  height: var(--dl-layout-size-xsmall);
+}
+ 
+.navbar4-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: var(--dl-layout-space-twounits);
+  z-index: 100;
+  position: absolute;
+  flex-direction: column;
+  background-color: var(--dl-color-theme-neutral-light);
+  /* Minimalist addition: subtle shadow for mobile menu */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+ 
+.navbar4-image2 {
+  width: 127px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+ 
+.navbar4-links2 {
+  gap: var(--dl-layout-space-unit);
+  flex: 0 0 auto;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.pricing-fragment10, .pricing-text10,
+.pricing-fragment12, .pricing-text12,
+.pricing-fragment15, .pricing-text15,
+.pricing-fragment13, .pricing-text13,
+.pricing-fragment14, .pricing-text14,
+.pricing-fragment11, .pricing-text11 {
+  display: contents;
+}
+ 
+@media(max-width: 767px) {
+  .navbar4-navbar-interactive {
+    padding-left: var(--dl-layout-space-twounits);
+    padding-right: var(--dl-layout-space-twounits);
+  }
+  .navbar4-desktop-menu {
+    display: none;
+  }
+  .navbar4-burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .navbar4-navbar-interactive {
+    padding: var(--dl-layout-space-unit);
+  }
+  .navbar4-mobile-menu {
+    padding: var(--dl-layout-space-unit);
+  }
+}
+
+.prop-info-wrapper {
+  display: contents;
+}
+ 
+.prop-info-pricing23 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  background-color: #f8f8f8; /* Light background for pricing section */
+  padding: var(--dl-layout-space-fiveunits);
+}
+ 
+.prop-info-max-width {
+  gap: var(--dl-layout-space-threeunits);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.prop-info-section-title {
+  gap: var(--dl-layout-space-unit);
+  width: 100%;
+  /* Removed dashed border for minimalist look */
+  display: flex;
+  max-width: 800px;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+ 
+.prop-info-text10 {
+  text-align: center;
+  color: #555555; /* Lighter text for description */
+}
+ 
+.prop-info-text11 {
+  text-align: center;
+  color: #333333; /* Darker text for main heading */
+  font-size: 42px; /* Adjusted font size */
+  font-weight: 700;
+}
+ 
+.prop-info-container {
+  gap: var(--dl-layout-space-twounits);
+  width: 100%;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  animation-name: none; /* Removed animation for a more static, clean look */
+  animation-delay: 0s;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: center; /* Center items in the container */
+}
+ 
+.prop-info-column1,
+.prop-info-column2,
+.prop-info-column3 {
+  flex: 1;
+  min-width: 300px; /* Minimum width for each column to prevent excessive squeezing */
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.05); /* Subtle border */
+  border-radius: 12px; /* Rounded corners for pricing cards */
+  flex-direction: column;
+  padding: var(--dl-layout-space-threeunits); /* Generous padding */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Lifted effect */
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff; /* Default background for cards */
+}
+
+.prop-info-column1:hover,
+.prop-info-column2:hover,
+.prop-info-column3:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12); /* More pronounced shadow on hover */
+}
+
+.prop-info-column2 {
+  background-color: var(--dl-color-theme-accent1); /* Use accent color for featured plan */
+}
+ 
+.prop-info-price1,
+.prop-info-price3,
+.prop-info-price5 {
+  gap: var(--dl-layout-space-twounits);
+  display: flex;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.prop-info-price2,
+.prop-info-price4,
+.prop-info-price6 {
+  gap: var(--dl-layout-space-halfunit);
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.prop-info-text12,
+.prop-info-text19,
+.prop-info-text27 {
+  font-style: normal;
+  font-weight: 600;
+  color: #333333; /* Consistent dark text for plan names */
+}
+ 
+.prop-info-text13,
+.prop-info-text20,
+.prop-info-text28 {
+  font-size: 48px;
+  color: var(--dl-color-theme-primary1); /* Primary color for prices */
+  font-weight: 700;
+}
+ 
+.prop-info-list1,
+.prop-info-list2,
+.prop-info-list3 {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  list-style: none; /* Remove default list bullet points */
+  padding: 0; /* Remove default padding */
+  margin: var(--dl-layout-space-twounits) 0; /* Spacing for lists */
+}
+ 
+.prop-info-list-item10, .prop-info-list-item11, .prop-info-list-item12,
+.prop-info-list-item13, .prop-info-list-item14, .prop-info-list-item15, .prop-info-list-item16,
+.prop-info-list-item17, .prop-info-list-item18, .prop-info-list-item19, .prop-info-list-item20 {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  color: #555555; /* List item text color */
+}
+
+.prop-info-list-item10 svg, .prop-info-list-item11 svg, .prop-info-list-item12 svg,
+.prop-info-list-item13 svg, .prop-info-list-item14 svg, .prop-info-list-item15 svg, .prop-info-list-item16 svg,
+.prop-info-list-item17 svg, .prop-info-list-item18 svg, .prop-info-list-item19 svg, .prop-info-list-item20 svg {
+  fill: var(--dl-color-theme-primary1); /* Checkmark icon color */
+}
+ 
+.prop-info-button1,
+.prop-info-button2,
+.prop-info-button3 {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 24px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  margin-top: auto; /* Push buttons to the bottom of the card */
+}
+
+.prop-info-button1 {
+  background-color: var(--dl-color-theme-neutral-light); /* Lighter background for outline button */
+  color: var(--dl-color-theme-primary1);
+  border: 1px solid var(--dl-color-theme-primary1);
+}
+
+.prop-info-button1:hover {
+  background-color: var(--dl-color-theme-primary1);
+  color: var(--dl-color-theme-secondary1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prop-info-button2,
+.prop-info-button3 {
+  background-color: var(--dl-color-theme-primary1);
+  color: var(--dl-color-theme-secondary1);
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.prop-info-button2:hover,
+.prop-info-button3:hover {
+  background-color: var(--dl-color-theme-primary2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+ 
+.pricing-fragment33, .pricing-text33,
+.pricing-fragment20, .pricing-text20,
+.pricing-fragment21, .pricing-text21,
+.pricing-fragment27, .pricing-text27,
+.pricing-fragment24, .pricing-text24,
+.pricing-fragment31, .pricing-text31,
+.pricing-fragment17, .pricing-text17,
+.pricing-fragment22, .pricing-text22,
+.pricing-fragment26, .pricing-text26,
+.pricing-fragment37, .pricing-text37,
+.pricing-fragment23, .pricing-text23,
+.pricing-fragment28, .pricing-text28,
+.pricing-fragment40, .pricing-text40,
+.pricing-fragment16, .pricing-text16,
+.pricing-fragment35, .pricing-text35,
+.pricing-fragment32, .pricing-text32,
+.pricing-fragment29, .pricing-text29,
+.pricing-fragment39, .pricing-text39,
+.pricing-fragment38, .pricing-text38,
+.pricing-fragment18, .pricing-text18,
+.pricing-fragment25, .pricing-text25,
+.pricing-fragment34, .pricing-text34,
+.pricing-fragment19, .pricing-text19,
+.pricing-fragment36, .pricing-text36,
+.pricing-fragment30, .pricing-text30 {
+  display: contents;
+}
+ 
+@media(max-width: 991px) {
+  .prop-info-container {
+    flex-direction: column;
+    align-items: stretch; /* Stretch items to full width */
+  }
+  .prop-info-column1, .prop-info-column2, .prop-info-column3 {
+    width: 100%;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .prop-info-max-width {
+    gap: var(--dl-layout-space-oneandhalfunits);
+  }
+  .prop-info-pricing23 {
+    padding: var(--dl-layout-space-threeunits);
+  }
+  .prop-info-column1, .prop-info-column2, .prop-info-column3 {
+    padding: var(--dl-layout-space-twounits);
+  }
+}
+
+.footertesto-wrapper {
+  display: contents;
+}
+ 
+.footertesto-footer7 {
+  width: 100%; /* Make footer full width */
+  height: auto; /* Adjust height based on content */
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  padding-top: var(--dl-layout-space-fourunits);
+  padding-bottom: var(--dl-layout-space-fourunits); /* Add bottom padding */
+  border-color: var(--dl-color-theme-secondary1);
+  border-width: 0; /* Remove border */
+  border-radius: 0; /* Remove border radius */
+  flex-direction: column;
+  justify-content: center;
+  /* Minimalist gradient with softer colors */
+  background-image: linear-gradient(45deg, rgba(194, 229, 156, 0.5) 0%, rgba(7, 138, 181, 0.4) 100%);
+  margin-top: var(--dl-layout-space-fourunits); /* Add spacing above footer */
+}
+ 
+.footertesto-container {
+  width: 80%; /* Adjust width for better responsiveness */
+  max-width: 600px; /* Max width for readability */
+  height: auto; /* Adjust height based on content */
+  display: grid;
+  align-self: center;
+  border: none; /* Remove borders */
+  grid-template-columns: 1fr 1fr;
+  gap: var(--dl-layout-space-unit); /* Add gap between grid items */
+  padding: var(--dl-layout-space-unit); /* Add padding */
+  color: #FFFFFF; /* White text for contrast on background */
+}
+ 
+.footertesto-text1,
+.footertesto-text2,
+.footertesto-text3,
+.footertesto-text4 {
+  text-align: center;
+  border-width: 0; /* Remove borders */
+  padding: var(--dl-layout-space-halfunit); /* Add some padding */
+}
+ 
+.footertesto-separator {
+  width: 50%; /* Shorter separator */
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5); /* Lighter separator color */
+  margin-top: var(--dl-layout-space-twounits); /* Spacing around separator */
+  margin-bottom: var(--dl-layout-space-twounits);
+}
+ 
+.footertesto-button {
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2); /* Lighter background for button */
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.footertesto-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+ 
+.pricing-fragment41, .pricing-text41,
+.pricing-fragment44, .pricing-text44,
+.pricing-fragment42, .pricing-text42,
+.pricing-fragment43, .pricing-text43 {
+  display: contents;
+}
+ 
+.footertestoroot-class-name {
+  width: auto;
+  align-self: stretch;
+}
+ 
+.pricing-container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fcfcfc; /* Very light background for the main container */
+}
+ 
+.pricing-fragment10, .pricing-text10,
+.pricing-fragment11, .pricing-text11,
+.pricing-fragment12, .pricing-text12,
+.pricing-fragment13, .pricing-text13,
+.pricing-fragment14, .pricing-text14,
+.pricing-fragment15, .pricing-text15,
+.pricing-fragment16, .pricing-text16,
+.pricing-fragment17, .pricing-text17,
+.pricing-fragment18, .pricing-text18,
+.pricing-fragment19, .pricing-text19,
+.pricing-fragment20, .pricing-text20,
+.pricing-fragment21, .pricing-text21,
+.pricing-fragment22, .pricing-text22,
+.pricing-fragment23, .pricing-text23,
+.pricing-fragment24, .pricing-text24,
+.pricing-fragment25, .pricing-text25,
+.pricing-fragment26, .pricing-text26,
+.pricing-fragment27, .pricing-text27,
+.pricing-fragment28, .pricing-text28,
+.pricing-fragment29, .pricing-text29,
+.pricing-fragment30, .pricing-text30,
+.pricing-fragment31, .pricing-text31,
+.pricing-fragment32, .pricing-text32,
+.pricing-fragment33, .pricing-text33,
+.pricing-fragment34, .pricing-text34,
+.pricing-fragment35, .pricing-text35,
+.pricing-fragment36, .pricing-text36,
+.pricing-fragment37, .pricing-text37,
+.pricing-fragment38, .pricing-text38,
+.pricing-fragment39, .pricing-text39,
+.pricing-fragment40, .pricing-text40,
+.pricing-fragment41, .pricing-text41,
+.pricing-fragment42, .pricing-text42,
+.pricing-fragment43, .pricing-text43,
+.pricing-fragment44, .pricing-text44 {
+  display: contents;
+}
+
+/* Ensure font smoothing for all text */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; /* A soft dark grey for headings */
+}
+
+p, span, a, button {
+  color: #555555; /* A medium grey for body text */
+}
+
+/* Override specific text colors where fragments are present if needed */
+.pricing-text10, .pricing-text11, .pricing-text12, .pricing-text13,
+.pricing-text14, .pricing-text15, .pricing-text16, .pricing-text17,
+.pricing-text18, .pricing-text19, .pricing-text20, .pricing-text21,
+.pricing-text22, .pricing-text23, .pricing-text24, .pricing-text25,
+.pricing-text26, .pricing-text27, .pricing-text28, .pricing-text29,
+.pricing-text30, .pricing-text31, .pricing-text32, .pricing-text33,
+.pricing-text34, .pricing-text35, .pricing-text36, .pricing-text37,
+.pricing-text38, .pricing-text39, .pricing-text40, .pricing-text41,
+.pricing-text42, .pricing-text43, .pricing-text44 {
+  /* Set a default text color that aligns with minimalist theme if not already set by parent */
+  color: inherit; /* Inherit from parent for consistent look */
+}
